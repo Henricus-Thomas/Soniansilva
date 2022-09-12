@@ -134,8 +134,16 @@ document.getElementById("demo").innerHTML = text;
             
             <h1>Het Weer</h1>
             <br>
+            <h3> Voorspellingen komende dagen:</3>
             <hr><hr>
 
+            
+            <br>
+            <a class="weatherwidget-io" href="https://forecast7.com/nl/50d854d35/brussels/" >Brussels, Belgium</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+            
 <br>
 <a class="weatherwidget-io" href="https://forecast7.com/nl/50d854d35/brussels/" data-theme="beige" >Brussels, Belgium</a>
 <script>
@@ -152,6 +160,8 @@ document.getElementById("demo").innerHTML = text;
 <!-- weather widget start --><a target="_blank" href="https://www.booked.net/weather/tervuren-233815"><img src="https://w.bookcdn.com/weather/picture/32_233815_1_1_95a5a6_250_7f8c8d_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=124&domid=w209&anc_id=11184"  alt="booked.net"/></a><!-- weather widget end -->
 
   <p><br>
+                <h3> Stand van de maan:</3>
+            <hr>
             <!-- © wdisseny --><div id="contain_moon" style="text-align:center;"><div style="font-weight:bold"></div><div style="padding:144px;filter:drop-shadow(0 0 144px hsl(220,100%,15%))"></div><div></div><div style="font-size:small"></div></div><script>(function(){var d=new Date().getDate();var m=document.querySelectorAll("#contain_moon div");var a=new XMLHttpRequest();var url="https://www.icalendar37.net/lunar/api/?lang=en&month="+(new Date().getMonth()+1)+"&year="+(new Date().getFullYear())+"&size=480&lightColor=rgb(245,245,245)&shadeColor=rgb(17,17,17)&t&LDZ="+new Date(new Date().getFullYear(),new Date().getMonth(),1)/1000+"";m[1].style.height="480px";a.onreadystatechange=function(){if(a.readyState==4&&a.status==200){var b=JSON.parse(a.responseText);m[1].innerHTML=b.phase[d].svg;if(typeof moon_widget_loaded=="function")moon_widget_loaded(b)}};a.open("GET",url,true);a.send()})()</script>
 <br>
             <p><p>
